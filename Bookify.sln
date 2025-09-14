@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6B445D5D-B53F-4813-B541-DCC1456F4668}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookify.Domain", "src\Bookify.Domain\Bookify.Domain.csproj", "{08A5F1C3-D270-4E22-B9BC-4B2CBE917774}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookify.Application", "src\Bookify.Application\Bookify.Application.csproj", "{DCAC59C9-9AFE-4D9D-9480-BBB9C4BA8BE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookify.Infrastructure", "src\Bookify.Infrastructure\Bookify.Infrastructure.csproj", "{E8F78A90-977B-4E88-A325-5E0188D373BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookify.WebAPI", "src\Bookify.WebAPI\Bookify.WebAPI.csproj", "{D99CED04-DD05-42C0-A6A8-A78C6DB88958}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{712B6881-912A-45ED-831A-1DC79E41DD71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookify.UnitTests", "tests\Bookify.UnitTests\Bookify.UnitTests.csproj", "{A9F73744-8EF7-421E-A556-C20C6E18D36D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookify.IntegrationTests", "tests\Bookify.IntegrationTests\Bookify.IntegrationTests.csproj", "{81562DC4-8CC6-461C-BE61-C4DBA262A138}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08A5F1C3-D270-4E22-B9BC-4B2CBE917774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A5F1C3-D270-4E22-B9BC-4B2CBE917774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A5F1C3-D270-4E22-B9BC-4B2CBE917774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A5F1C3-D270-4E22-B9BC-4B2CBE917774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCAC59C9-9AFE-4D9D-9480-BBB9C4BA8BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCAC59C9-9AFE-4D9D-9480-BBB9C4BA8BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCAC59C9-9AFE-4D9D-9480-BBB9C4BA8BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCAC59C9-9AFE-4D9D-9480-BBB9C4BA8BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8F78A90-977B-4E88-A325-5E0188D373BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8F78A90-977B-4E88-A325-5E0188D373BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8F78A90-977B-4E88-A325-5E0188D373BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8F78A90-977B-4E88-A325-5E0188D373BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D99CED04-DD05-42C0-A6A8-A78C6DB88958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D99CED04-DD05-42C0-A6A8-A78C6DB88958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D99CED04-DD05-42C0-A6A8-A78C6DB88958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D99CED04-DD05-42C0-A6A8-A78C6DB88958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9F73744-8EF7-421E-A556-C20C6E18D36D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9F73744-8EF7-421E-A556-C20C6E18D36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9F73744-8EF7-421E-A556-C20C6E18D36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9F73744-8EF7-421E-A556-C20C6E18D36D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81562DC4-8CC6-461C-BE61-C4DBA262A138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81562DC4-8CC6-461C-BE61-C4DBA262A138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81562DC4-8CC6-461C-BE61-C4DBA262A138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81562DC4-8CC6-461C-BE61-C4DBA262A138}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{08A5F1C3-D270-4E22-B9BC-4B2CBE917774} = {6B445D5D-B53F-4813-B541-DCC1456F4668}
+		{DCAC59C9-9AFE-4D9D-9480-BBB9C4BA8BE8} = {6B445D5D-B53F-4813-B541-DCC1456F4668}
+		{E8F78A90-977B-4E88-A325-5E0188D373BE} = {6B445D5D-B53F-4813-B541-DCC1456F4668}
+		{D99CED04-DD05-42C0-A6A8-A78C6DB88958} = {6B445D5D-B53F-4813-B541-DCC1456F4668}
+		{A9F73744-8EF7-421E-A556-C20C6E18D36D} = {712B6881-912A-45ED-831A-1DC79E41DD71}
+		{81562DC4-8CC6-461C-BE61-C4DBA262A138} = {712B6881-912A-45ED-831A-1DC79E41DD71}
+	EndGlobalSection
+EndGlobal

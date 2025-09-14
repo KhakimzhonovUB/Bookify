@@ -1,0 +1,46 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# C# files
+*.cs text diff=csharp
+
+# Visual Studio Solution files
+*.sln text eol=crlf
+
+# Visual Studio Project files
+*.csproj text
+*.vbproj text
+*.vcxproj text
+*.vcproj text
+*.dbproj text
+*.fsproj text
+
+# JetBrains Rider files
+*.DotSettings text
+
+# XML project files
+*.xml text
+*.props text
+*.targets text
+
+# JSON files
+*.json text
+
+# Markdown files
+*.md text
+
+# Git files
+.gitattributes text
+.gitignore text
+
+# Binary files
+*.dll binary
+*.exe binary
+*.pdb binary
+*.zip binary
+*.7z binary
+*.tar.gz binary
+
+# JetBrains Rider cache and temp files
+*.tmp binary
+*.bak binary
