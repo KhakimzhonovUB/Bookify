@@ -1,5 +1,7 @@
 ﻿using Bookify.Domain.Abstractions;
 using Bookify.Domain.Apartments;
+using Bookify.Domain.Bookings.Events;
+using Bookify.Domain.Shared;
 
 namespace Bookify.Domain.Bookings;
 
@@ -49,11 +51,29 @@ public sealed class Booking : Entity
     }
 
     public static Booking Reserve(
-        Guid apartmentId,
+        Apartment apartment,
         Guid userId,
         DateRange duration,
+        PricingService pricingService,
         DateTime utcNow)
     {
-        throw new NotImplementedException();
+        var pricingDetails = pricingService.CalculatePrice(apartment, duration);
+        var booking = new Booking(
+            Guid.NewGuid(),
+            apartment.Id,
+            userId,
+            duration,
+            pricingDetails.PriceForPeriod,
+            pricingDetails.CleaningFee,
+            pricingDetails.AmenitiesUpCharge,
+            pricingDetails.TotalPrice,
+            BookingStatus.Reserved,
+            utcNow
+        );
+        
+        booking.RaiseDomainEvent(new BookingReservedDomainEvent((booking.Id)));
+        apartment.LastBookedOnUtc = utcNow;
+        
+        return booking;
     }
 }
