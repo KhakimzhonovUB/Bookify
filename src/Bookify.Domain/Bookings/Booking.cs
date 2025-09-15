@@ -1,4 +1,5 @@
 ﻿using Bookify.Domain.Abstractions;
+using Bookify.Domain.Apartments;
 using Bookify.Domain.Bookings.Events;
 using Bookify.Domain.Shared;
 
@@ -50,15 +51,16 @@ public sealed class Booking : Entity
     }
 
     public static Booking Reserve(
-        Guid apartmentId,
+        Apartment apartment,
         Guid userId,
         DateRange duration,
-        PricingDetails pricingDetails,
+        PricingService pricingService,
         DateTime utcNow)
     {
+        var pricingDetails = pricingService.CalculatePrice(apartment, duration);
         var booking = new Booking(
             Guid.NewGuid(),
-            apartmentId,
+            apartment.Id,
             userId,
             duration,
             pricingDetails.PriceForPeriod,
