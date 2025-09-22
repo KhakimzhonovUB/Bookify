@@ -13,6 +13,7 @@ public static class DependencyInjection
         {
             configuration.RegisterServicesFromAssemblies(typeof(DependencyInjection).Assembly);
             configuration.AddOpenBehavior(typeof(LoggingBehavior<,>));
+            configuration.AddOpenBehavior(typeof(ValidationBehavior<,>));
         });
 
         services.AddTransient<PricingService>();
