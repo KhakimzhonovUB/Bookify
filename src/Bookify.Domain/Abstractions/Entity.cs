@@ -11,7 +11,7 @@ public abstract class Entity
         Id = id;
     }
     
-    public IReadOnlyCollection<IDomainEvent> GetDomainEvents
+    public IReadOnlyCollection<IDomainEvent> GetDomainEvents()
         => _domainEvents.AsReadOnly();
     
     public void ClearDomainEvents()
