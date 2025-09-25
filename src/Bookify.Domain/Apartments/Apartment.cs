@@ -19,6 +19,10 @@ public sealed class Apartment : Entity
     // Amenities
     public List<Amenity> Amenities { get; private set; }
     
+    #pragma warning disable CS8618
+    private Apartment() { }
+    #pragma warning restore CS8618
+    
     public Apartment(
         Guid id,
         Name name,

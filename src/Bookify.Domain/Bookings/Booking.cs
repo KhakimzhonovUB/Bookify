@@ -26,6 +26,10 @@ public sealed class Booking : Entity
     public DateTime? CompletedOnUtc { get; private set; }
     public DateTime? CancelledOnUtc { get; private set; }
     
+    #pragma warning disable CS8618
+    private Booking() { }
+    #pragma warning restore CS8618
+    
     private Booking(
         Guid id,
         Guid apartmentId,
