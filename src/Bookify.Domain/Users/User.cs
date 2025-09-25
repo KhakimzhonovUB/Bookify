@@ -9,6 +9,10 @@ public sealed class User : Entity
     public LastName LastName { get; private set; }
     public Email Email { get; private set; }
 
+    #pragma warning disable CS8618
+    private User() { }
+    #pragma warning restore CS8618
+    
     private User(
         Guid id,
         FirstName firstName,
